@@ -1,99 +1,101 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/cds_pop.css">
+      
+  </head>
 
-<!--
+  <body>
 
-
-                                         ---..`
-                               `.-::///++hhhhhhhhso+:.
-                          .-/+ooossssssyyddddddddddhhhhy+:`
-                      .:+oossyyyyyyyyyyyydddddddddddddddhhhs/.
-                   .:+ossyyyyyyyyyyyyyyyyddddddddddddddddddhhhy/`
-                 -+oosyyyyyyyyyyyyyyyyyyydddddddddddddddddddddhhh+.
-               -+osyyyyyyyyyyyyyyyyyyyysshhhddddddddddddddddddddhhho`
-             -+osyyyyyyyyyyyyyys+/-.`````````.-:/oydddddddddddddddhhh/
-           `/osyyyyyyyyyyyys+-`````````    ````````.:ohdddddddddddddhhy.
-          .oosyyyyyyyyyyy+-`````                  `````-oddddddddddddhhh:
-         -ooyyyyyyyyyyy/.```             `            ```.+ddddddddddddhh/
-        -ooyyyyyyyyyyo.```               `              ```.sdddddddddddhh/
-       .ooyyyyyyyyyy:```                 `                ```/dddddddddddhh-
-      `+osyyyyyyyyy-```                  `                 ```:ddddddddddhhy`
-     `:++ossyyyyyy:```                   `                  ```:ddddddddddhh+
-    `./++ooooooos/```                    `                   ```odddddddddhhh`
-    `-++ooooooooo.``                     `                    ``.ddddddddddhh:
-    `:++oooooooo/```                     `                    ```sdddddddddhh+
-   ``:++oooooooo:```                     `                    ```odddddddddhho
-   ``/++oooooooo:```                     `                    ```odddddddddhho
-   ``:++oooooooo/```                     `                    ```sdddddddddhh+
-    `-++oooooooo+```                     `                    ``.ddddddddddhh:
-    `.++ooooooooo:```                    `                   ```+dddddddddhhh`
-    ``:++ooooooooo.```                   `                  ```-ddddddddddhho
-     `./++oooooooo+.```                  `                 ```-hdddddddddhhh`
-      `-++ooooooooo+.```                 `                ```:hddddddddddhh:
-      ``-++oooooooooo:````               `              ````+dddddddddddhh+
-       ``-++oooooooooo+-````             `            ````/hdddddddddddhh+
-        ``-+++oooooooooo+:`````                    ````.:sdddddddddddhhh/
-          `./++oooooooooooo/-.```````        ```````.:+syyyhddddddddhhy-
-           ``-/++ooooooooooo+++/--.````````````.-:+syyyyyyyyyhddddhhho`
-             `.:+++oooooooo++++++++++////++oossyyyyyyyyyyyyyyyyhhhhs.
-              ``.:/+++oooo++++++++++++++osyyyyyyyyyyyyyyyyyyysssys-
-                 `.-:+++/+++++++++++++++osyyyyyyyyyyyyyyyysssss/.
-                   ``.-.``.-:/++++++++++osyyyyyyyyyyyyssssss+-`
-                      `````````.--:://///syyyyssssssssss+:.
-                          ``````````````.ssssssssso+/-.
-                                `````````:::--..`
-
-
--->
-<!doctype html>
-
-
-<html>
-<head>
-<meta charset="utf-8">
-<title></title>
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-
-
-<link href="css/cds_pop.css" rel="stylesheet">
-<script src="js/jquery.js"></script>
-<script src="js/jquery.mixitup.js"></script>
-<script type="text/javascript">
-
-			$(function(){
-  $('#Container2').mixItUp();
-});
-		</script>
-
-</head>
-
-
-<body>
-<div class="controls">
-  <label>Filter:</label>
-
-  <button class="filter" data-filter="all">All</button>
-  <button class="filter" data-filter=".category-1">WEATHER</button>
-  <button class="filter" data-filter=".category-2">CYBER</button>
-  <button class="filter" data-filter=".category-3">ECONOMY</button>
-
+<form class="controls" id="Filters">
+<div class="container">
+  <!-- We can add an unlimited number of "filter groups" using the following format: -->
+  
+  <div class="row">
+    <div class="col-lg-4 col-md-3 ">
+        <fieldset>
+            <h4>Subject Area</h4>
+            <button class="filter" data-filter=".econ">Economy</button>
+            <button class="filter" data-filter=".env">Environment</button>
+            <button class="filter" data-filter=".cyber">Cyber</button>
+        </fieldset>
+  </div>
+  
+  <div class="col-lg-4 col-md-3 ">
+    <fieldset>
+        <h4>Code Base</h4>
+        <button class="filter" data-filter=".r">R</button>
+        <button class="filter" data-filter=".py">Python</button>
+        <button class="filter" data-filter=".js">JavaScript</button>
+    </fieldset>
+  </div>
+  
+  <div class="col-lg-4 col-md-3 ">
+      <fieldset>
+        <h4>Partners</h4>
+        <button class="filter" data-filter=".industry">Industry</button>
+        <button class="filter" data-filter=".academia">Academia</button>
+        <button class="filter" data-filter=".gov">Gov</button>
+      </fieldset>
+  </div>
 </div>
-<div id="Container2" class="containermix">
-    <a href="#riskmap" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.001.jpg"  alt = "risk1" class="mix category-1" data-myorder="1"></a>
-    <a href="#nvd" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.002.jpg" alt="nvd1" class="mix category-2" data-myorder="3"></a>
-    <a href="#viirs1" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.003.jpg"  alt = "viirs1" class="mix category-3" data-myorder="4"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-    <a href="#" class="portfolio-link" data-toggle="modal"><img src="../img/Gallery_Tiles.004.jpg"  class="mix category-1" data-myorder="1"></a>
-
 </div>
+      </form>
 
-
-
-  <!-- Modal for each story  -->
+<div id="Container" class="container">
+        <div class=" mix r js env gov" >
+            <a href="#riskmap"  data-toggle="modal">
+              <img  src="img/Gallery_Tiles.001.jpg" width="100%" alt="noaa1"/>
+            </a>
+        </div>
+        <div class="mix py js cyber gov" data-toggle="modal">
+              <a href="">
+                  <img src="img/Gallery_Tiles.002.jpg" width="100%" alt="nist1"/>
+              </a>
+        </div>
+        <div class="mix r econ gov" data-toggle="modal">
+            <a href="#viirs" data-toggle="modal">
+                <img src="img/Gallery_Tiles.003.jpg" width="100%" alt="viirs1"/>
+            </a>
+        </div>
+        <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+        <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+      <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+      <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+      <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+      <div class="mix " data-toggle="modal">
+              <a href="#">
+                  <img src="img/Gallery_Tiles.004.jpg" width="100%" alt="placeholder"/>
+              </a>
+        </div>
+        
+</div>
+      
+       <!-- Modal for each story  -->
 
     <!-- riskmap -->
     <div class="portfolio-modal modal fade" id="riskmap" tabindex="-1" role="dialog" aria-hidden="true" >
@@ -109,7 +111,7 @@
 
                 <div class="row">
                     <div class="col-lg-4  col-md-4">
-                        <br><img class="img-responsive img-centered" src="../img/Gallery_Tiles.001.jpg" alt="risk1" width="300">
+                        <br><img class="img-responsive img-centered" src="img/Gallery_Tiles.001.jpg" alt="risk1" width="300">
                         <a id="btn_base" style="text-align:left;font-size:80%" href="http://commercedataservice.github.io/tutorial_noaa_hail/" target="_top" >Get Started</a>
                     </div>
                     <div class="col-lg-8  col-md-18" style="text-align:left;">
@@ -145,7 +147,7 @@
             <div class="container" >
                 <div class="row">
                     <div class="col-lg-4  col-md-4">
-                        <br><img class="img-responsive img-centered" src="../img/Gallery_Tiles.002.jpg" alt="nvd1" width="300">
+                        <br><img class="img-responsive img-centered" src="img/Gallery_Tiles.002.jpg" alt="nvd1" width="300">
                          <a id="btn_base" style="text-align:center;font-size:80%" href="http://commercedataservice.github.io/tutorial_nist_nvd/" target="_top" >Get Started</a>
 
 
@@ -183,7 +185,7 @@
             <div class="container" >
                 <div class="row">
                     <div class="col-lg-4  col-md-6">
-                        <br><img class="img-responsive img-centered" src="../img/Gallery_Tiles.003.jpg" alt="viirs1" width="300">
+                        <br><img class="img-responsive img-centered" src="img/Gallery_Tiles.003.jpg" alt="viirs1" width="300">
                         <a id="btn_base" style="text-align:center;font-size:80%" href="http://commercedataservice.github.io/tutorial_viirs_part1/" target="_top" >Get Started</a>
                     </div>
                     <div class="col-lg-8  col-md-16" style="text-align:left;">
@@ -202,19 +204,14 @@
             </div>
         </div>
     </div>
+        <script src='js/jquery.js'></script>
+        <script src='js/jquery.mixitup.js'></script>
+        <script src='js/bootstrap.js'></script>
+        <script src="js/index.js"></script>
+        <script src="js/agency.js"></script>
 
-
-
-
-
-</body>
-
-
-
-    <!-- JavaScript -->
-    <script src="js/agency.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-
+    
+    
+    
+  </body>
 </html>
