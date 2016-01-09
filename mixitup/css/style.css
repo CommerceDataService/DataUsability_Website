@@ -1,5 +1,5 @@
 body, button{
-  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-family: 'SourceSansProRegular','Open Sans','Helvetica Neue',Arial,sans-serif;
   color: #333;
 }
  
@@ -8,13 +8,12 @@ body, button{
  */
 
 h4{
-  font-weight: 150;
-  margin-bottom: .5em;
+  font-weight: 120;
   color: #333;
 }
  
 label{
-  font-weight: 300;
+  font-weight: 00;
   color: #333;
 }
  
@@ -22,11 +21,9 @@ button{
   display: inline-block;
   padding: .1em .8em;
   border: 0;
-  margin: 0 .2em;
-  font-size: 13px;
+  margin: 0 0;
+  font-size: 12px;
   font-weight: 200;
-  border-radius: .25em;
-  cursor: pointer;
 }
 
 button.active{

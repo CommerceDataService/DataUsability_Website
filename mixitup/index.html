@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/cds_pop.css">
+
       
   </head>
 
@@ -14,35 +15,38 @@
 <form class="controls" id="Filters">
 <div class="container">
   <!-- We can add an unlimited number of "filter groups" using the following format: -->
-  
-  <div class="row">
-    <div class="col-lg-4 col-md-3 ">
+      <div class="row"><button id="Reset" style="background:darkred;color:white">Clear Filters</button></div>
+      <div class="row">
+        <div class="col-lg-4 col-md-3 ">
+            <fieldset>
+                <h4>Subject Area</h4>
+                <button class="filter" data-filter=".econ">Economy</button>
+                <button class="filter" data-filter=".env">Enviro</button>
+                <button class="filter" data-filter=".cyber">Cyber</button>
+                <button class="filter" data-filter=".social">Social</button>
+            </fieldset>
+      </div>
+
+      <div class="col-lg-4 col-md-3 ">
         <fieldset>
-            <h4>Subject Area</h4>
-            <button class="filter" data-filter=".econ">Economy</button>
-            <button class="filter" data-filter=".env">Environment</button>
-            <button class="filter" data-filter=".cyber">Cyber</button>
+            <h4>Code Base</h4>
+            <button class="filter" data-filter=".r">R</button>
+            <button class="filter" data-filter=".py">Python</button>
+            <button class="filter" data-filter=".js">JavaScript</button>
+            <button class="filter" data-filter=".excel">Excel</button>
         </fieldset>
-  </div>
-  
-  <div class="col-lg-4 col-md-3 ">
-    <fieldset>
-        <h4>Code Base</h4>
-        <button class="filter" data-filter=".r">R</button>
-        <button class="filter" data-filter=".py">Python</button>
-        <button class="filter" data-filter=".js">JavaScript</button>
-    </fieldset>
-  </div>
-  
-  <div class="col-lg-4 col-md-3 ">
-      <fieldset>
-        <h4>Partners</h4>
-        <button class="filter" data-filter=".industry">Industry</button>
-        <button class="filter" data-filter=".academia">Academia</button>
-        <button class="filter" data-filter=".gov">Gov</button>
-      </fieldset>
-  </div>
-</div>
+      </div>
+
+      <div class="col-lg-4 col-md-3 ">
+          <fieldset>
+            <h4>Partners</h4>
+            <button class="filter" data-filter=".industry">Industry</button>
+            <button class="filter" data-filter=".academia">Academia</button>
+            <button class="filter" data-filter=".gov">Gov</button>
+          </fieldset>
+      </div>
+
+    </div>
 </div>
       </form>
 
