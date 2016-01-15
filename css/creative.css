@@ -168,17 +168,18 @@ aside {
 
 .backie {
     position: relative;
-    width: 100%;
-    height:100%;
+    width:100%;
+    height:80%;
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/Slide.jpg);
+    background-image: url(../img/ft-animated.gif);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
