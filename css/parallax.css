@@ -1,13 +1,15 @@
 .scroll {
      /*Set a css background */
-    background:url(../img/Slide.jpg)fixed;
+    background:url(../img/Slide.jpg) fixed;
     
     /*Dont mind the rest*/
-    width:100%;
-    background-position: center;
+    position:relative;
+    height:80%;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     
+    background-repeat: no-repeat;
 
     text-align:center;
     color:#fff;
