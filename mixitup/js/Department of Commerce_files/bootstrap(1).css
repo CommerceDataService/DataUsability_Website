@@ -1,18 +1,11 @@
 /*!
- * Bootstrap v3.3.2 (http://getbootstrap.com)
+ * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
+
 article,
 aside,
 details,
@@ -53,10 +46,10 @@ a:hover {
 abbr[title] {
   border-bottom: 1px dotted;
 }
-/*b,
+b,
 strong {
   font-weight: bold;
-}*/
+}
 dfn {
   font-style: italic;
 }
@@ -109,15 +102,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
-button,
-input,
-optgroup,
-select,
-textarea {
-  margin: 0;
-  font: inherit;
-  color: inherit;
-}
+
 button {
   overflow: visible;
 }
@@ -958,10 +943,22 @@ th {
 .glyphicon-bitcoin:before {
   content: "\e227";
 }
+.glyphicon-btc:before {
+  content: "\e227";
+}
+.glyphicon-xbt:before {
+  content: "\e227";
+}
 .glyphicon-yen:before {
   content: "\00a5";
 }
+.glyphicon-jpy:before {
+  content: "\00a5";
+}
 .glyphicon-ruble:before {
+  content: "\20bd";
+}
+.glyphicon-rub:before {
   content: "\20bd";
 }
 .glyphicon-scale:before {
@@ -1057,10 +1054,7 @@ th {
 .glyphicon-menu-up:before {
   content: "\e260";
 }
-
-/*adjusted this from asterisk to be a new class*/
-/*this has an effect on the commerce logo in the banner and borders, but also effects the column/rows system*/
-div.boxer {
+* {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -1077,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1164,23 +1158,10 @@ hr {
   overflow: visible;
   clip: auto;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
+[role="button"] {
+  cursor: pointer;
 }
+
 h1 small,
 h2 small,
 h3 small,
@@ -1400,17 +1381,12 @@ ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
-
-/*commented out to avoid conflicting with footer menu*/
-/*
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
 }
-*/
-
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -1565,9 +1541,6 @@ pre code {
   background-color: transparent;
   border-radius: 0;
 }
-
-/*remove scrolling restriction on side bar to prevent overflow*/
-/* 
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
@@ -1580,7 +1553,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 800px;
   }
 }
 @media (min-width: 992px) {
@@ -1603,7 +1576,6 @@ pre code {
   margin-right: -15px;
   margin-left: -15px;
 }
-*/
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -2576,9 +2548,12 @@ output {
 .form-control[disabled],
 .form-control[readonly],
 fieldset[disabled] .form-control {
-  cursor: not-allowed;
   background-color: #eee;
   opacity: 1;
+}
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
 }
 textarea.form-control {
   height: auto;
@@ -2646,6 +2621,7 @@ input[type="search"] {
 }
 .radio-inline,
 .checkbox-inline {
+  position: relative;
   display: inline-block;
   padding-left: 20px;
   margin-bottom: 0;
@@ -2679,6 +2655,7 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
+  min-height: 34px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
@@ -2720,6 +2697,7 @@ select[multiple].form-group-sm .form-control {
 }
 .form-group-sm .form-control-static {
   height: 30px;
+  min-height: 32px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
@@ -2756,6 +2734,7 @@ select[multiple].form-group-lg .form-control {
 }
 .form-group-lg .form-control-static {
   height: 46px;
+  min-height: 38px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
@@ -3377,11 +3356,9 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
-  visibility: hidden;
 }
 .collapse.in {
   display: block;
-  visibility: visible;
 }
 tr.collapse.in {
   display: table-row;
@@ -3409,7 +3386,7 @@ tbody.collapse.in {
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top: 4px solid;
+  border-top: 4px dashed;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
@@ -4049,11 +4026,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .tab-content > .tab-pane {
   display: none;
-  visibility: hidden;
 }
 .tab-content > .active {
   display: block;
-  visibility: visible;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4100,7 +4075,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
-    visibility: visible !important;
   }
   .navbar-collapse.in {
     overflow-y: visible;
@@ -4825,7 +4799,8 @@ a.label:focus {
   position: relative;
   top: -1px;
 }
-.btn-xs .badge {
+.btn-xs .badge,
+.btn-group-xs > .btn .badge {
   top: 0;
   padding: 1px 5px;
 }
@@ -5657,10 +5632,10 @@ a.list-group-item-danger.active:focus {
   height: 100%;
   border: 0;
 }
-.embed-responsive.embed-responsive-16by9 {
+.embed-responsive-16by9 {
   padding-bottom: 56.25%;
 }
-.embed-responsive.embed-responsive-4by3 {
+.embed-responsive-4by3 {
   padding-bottom: 75%;
 }
 .well {
@@ -5719,7 +5694,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1050;
   display: none;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -5762,10 +5737,12 @@ button.close {
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
 }
 .modal-backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   left: 0;
+  z-index: 1040;
   background-color: #000;
 }
 .modal-backdrop.fade {
@@ -5836,11 +5813,10 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
-  visibility: visible;
   filter: alpha(opacity=0);
   opacity: 0;
 }
@@ -5944,7 +5920,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "SourceSansProRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
@@ -6360,7 +6336,6 @@ button.close {
 }
 .hidden {
   display: none !important;
-  visibility: hidden !important;
 }
 .affix {
   position: fixed;
