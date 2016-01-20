@@ -167,7 +167,7 @@ aside {
 }
 
 .backie {
-    position: relative;
+    position: absolute;
     width:100%;
     min-height: auto;
     text-align: center;
