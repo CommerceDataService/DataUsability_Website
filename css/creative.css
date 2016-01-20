@@ -172,13 +172,7 @@ aside {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/ft-animated.gif);
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 
