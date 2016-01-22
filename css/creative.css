@@ -175,6 +175,15 @@ aside {
 
 }
 
+#switch {
+   background-image: url('../img/youtube.jpg');
+
+}
+
+#switch:hover {
+   background-image: url('../img/youtube.jpg');
+}
+
 
 header .header-content {
     position: relative;
