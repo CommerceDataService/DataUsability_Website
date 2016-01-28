@@ -167,12 +167,21 @@ aside {
 }
 
 .backie {
-    position: relative;
+    position: absolute;
     width:100%;
     min-height: auto;
     text-align: center;
     color: #fff;
 
+}
+
+#switch {
+   background-image: url('../img/youtube.jpg');
+
+}
+
+#switch:hover {
+   background-image: url('../img/youtube.jpg');
 }
 
 
